@@ -142,8 +142,7 @@ const config = {
     extractCSS
   ],
   devServer: {
-    //host: '192.168.1.48',
-    host: '192.168.1.50',
+    host: '192.168.1.50',//host建议用自己的IP，用localhost的话其他电脑无法访问，只能用localhost访问。
     //host: 'localhost',
     port: 8080,
     historyApiFallback: false,
@@ -151,7 +150,7 @@ const config = {
     disableHostCheck: true,
     proxy: {
       '/api': {
-        target: 'http://192.168.1.110:8081',
+        target: 'http://192.168.1.110:8081',//后台服务器的IP地址
         changeOrigin: true,
         pathRewrite: { '^/api': '' }
       }
