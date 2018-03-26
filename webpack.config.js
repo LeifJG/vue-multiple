@@ -109,7 +109,7 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 80000,
+              limit: 10000,
               name:'fonts/[name].[md5:hash:hex:7].[ext]'
             }
           }
@@ -123,7 +123,7 @@ const config = {
           {
             loader: 'url-loader',
             options: {
-              limit: 800000,
+              limit: 10000,
               name:'img/[name].[md5:hash:hex:7].[ext]'
             }
           }
@@ -142,15 +142,14 @@ const config = {
     extractCSS
   ],
   devServer: {
-    host: '192.168.1.50',//host建议用自己的IP，用localhost的话其他电脑无法访问，只能用localhost访问。
-    //host: 'localhost',
+    host: 'localhost',//实际开发host建议用自己的IP，方便同事访问。用localhost的话其他电脑无法访问，只能用localhost访问。
     port: 8080,
     historyApiFallback: false,
     noInfo: true,
     disableHostCheck: true,
     proxy: {
       '/api': {
-        target: 'http://192.168.1.110:8081',//后台服务器的IP地址
+        target: 'http://127.0.0.1:8080',//后台服务器的IP地址，用代理可以解决跨域问题。
         changeOrigin: true,
         pathRewrite: { '^/api': '' }
       }

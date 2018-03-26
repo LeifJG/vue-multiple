@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <img :src="logoImg" alt="" class="logo">
-    vue multiple
+    <div class="container">
+      <img :src="logoImg" alt="" class="logo">
+      <h1 class="title">multiple and single </h1>
+      <p class="desc">Vue2、ElementUI单多页应用混合脚手架</p>
+      <a href="/multiple/index.html" class="link">多页面演示</a>
+      <a href="/single/index.html" class="link">单页面演示</a>
+    </div>
+    
   </div>
 </template>
 
 <script>
   import logo from 'assets/img/logo.jpg'
-  //import modal from 'components/modal.vue'
   import Lib from "assets/js/Lib";
   export default {
     components: {
@@ -33,10 +38,23 @@
 
 <style lang="less">
   @import "../../assets/css/m_base.less";
-  .logo{
-    display: block;
-    margin: 0 auto;
+  .container{
+    .title{
+      margin: 0.5rem 0;
+    }
+    .desc{
+      font-size: 18px;
+    }
+    .logo{
+      display: block;
+      margin: 0 auto;
+    }
+    .link{
+      margin: 0 0.3rem;
+      font-size: 18px;
+    }
   }
+  
   body{
     text-align: center;
   }
