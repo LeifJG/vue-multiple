@@ -40,20 +40,24 @@
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   },
-  "tjOptions": {
-    "typescript": {
-      "title": "是否接入ts", 
-      "optionList": [
-        { "label": "是", "value": 1 },
-        { "label": "否", "value": 0 }
+  "tjOptions": [
+    {
+      "name": "typescript",
+      "message": "是否接入ts",
+      "type": "list",
+      "choices": [
+        { "name": "是", "value": 1 },
+        { "name": "否", "value": 0 }
       ]
     },
-    "yunji-report": {
-      "title": "是否接入守望", 
-      "optionList": [
-        { "label": "是", "value": 1 },
-        { "label": "否", "value": 0 }
+    { 
+      "name": "yunji-report",
+      "message": "是否接入守望",
+      "type": "list",
+      "choices": [
+        { "name": "是", "value": 1 },
+        { "name": "否", "value": 0 }
       ]
     }
-  }
+  ]
 }
