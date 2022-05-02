@@ -1,6 +1,6 @@
 {
-  "name": "meiyimini-partner",
-  "description": "meiyimini partner",
+  "name": "<%= projectName %>",
+  "description": "",
   "author": "LiJG",
   "private": true,
   "scripts": {
@@ -51,7 +51,7 @@
       ]
     },
     { 
-      "name": "yunji-report",
+      "name": "yunjiReport",
       "message": "是否接入守望",
       "type": "list",
       "choices": [
