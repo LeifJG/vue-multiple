@@ -1,0 +1,65 @@
+[
+  {
+    "name": "yunjiComponents",
+    "message": "是否使用yunji-components？",
+    "type": "list",
+    "choices": [
+      {
+        "name": "是",
+        "value": 1
+      },
+      {
+        "name": "否",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "name": "yunjiReport",
+    "message": "是否接入守望？",
+    "type": "list",
+    "choices": [
+      {
+        "name": "是",
+        "value": 1
+      },
+      {
+        "name": "否",
+        "value": 0
+      }
+    ]
+  },
+  {
+    "name": "input",
+    "message": "你所在的业务线名称",
+    "type": "input"
+  },
+  {
+    "name": "confirm",
+    "message": "你是否愿意开发项目模板？",
+    "type": "confirm"
+  },
+  {
+    "name": "checkbox",
+    "message": "选择你所在业务线",
+    "type": "checkbox",
+    "choices": [
+      {
+        "name" : "red"
+      },
+      {
+        "name" : "blue"
+      },
+      {
+        "name" : "green"
+      },
+      {
+        "name" : "pink",
+        "checked" : true
+      },
+      {
+        "name" : "orange"
+      }
+    ]
+  }
+]
