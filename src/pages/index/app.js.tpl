@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './app.vue'
 import * as yunjiComponents from 'yunji-components'
-<% if (yunji-components == 1) { %>
+<% if (yunjiComponents == 1) { %>
 import * as yunjiComponents from 'yunji-components'
 <% } %>
 
